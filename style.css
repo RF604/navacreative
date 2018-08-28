@@ -245,8 +245,15 @@ img {
     margin-top: 0px;
     object-fit: cover;
     width: 100%;
-    max-height: 500px;
+    height: 440px;
 }    
+
+@media screen and (min-width: 650px){
+    img {
+    height: auto;
+    max-height: 700px;
+    }
+}
     
 .map {
     filter:contrast(.94);
