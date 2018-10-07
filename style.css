@@ -2,7 +2,6 @@
 
 /* PAGE */
 body{
-	font-family: 'Crimson Text', serif;
     max-width: 1400px;
     padding: 40px 40px 5px 40px;
     margin: 0 auto;
@@ -40,9 +39,11 @@ body{
 
 /* MOBILE NAV */
 .menu {
-	font-size: 18px;
+	font-size: 20px;
     font-weight: 600;
 	cursor:pointer;
+    font-family: 'Crimson Text', serif;
+    
 }
 .overlay {
     height: 0%;
@@ -84,11 +85,11 @@ body{
 }
 .overlay .closebtn {
 	position: absolute;
-	top: 27px;
+	top: 37px;
 	right: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 50px;
+    font-size: 40px;
     z-index: 1;
 }
 
@@ -124,37 +125,52 @@ body{
 
 
 /* HEADINGS, SUBHEADINGS, COLORS AND HOVERS  */
-body, button, a, .menu {
+body, a, .menu {
     color: #111114;
+    text-decoration: none;
 }
-a:hover, button:hover, .menu:hover {
+a:hover, .menu:hover {
     color: #358963;
 } 
 h1 {
-	font-size: 30px;
-	line-height: 1.5;
+	font-family: 'Crimson Text', serif;
+    font-size: 32px;
+	line-height: 1.3;
 	font-weight: 600;
 	padding: 0;
     margin: 0 0 20px 0;
 }
 h2 {
-	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 	line-height: 1.5;
 	font-weight: 400;
     margin: 0 0 10px 0;
-} 
+}
+.row h2 /* Menu Subheadings */ {
+    font-weight: 600;
+    font-size: 22px;
+                    }
+.bold /* Team Names */ {
+    font-weight: 700;
+    padding-top: 4px;
+    color: black !important;
+}
 .sidebar a {
+    font-family: 'Crimson Text', serif;
     font-size: 25px;
 	line-height: 2;
 	font-weight: 400;
 }
 h3 {
-    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 0;
 }
 p  {
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
@@ -200,9 +216,10 @@ footer {
   width: 100%;
 }
 footer > a {
+    font-family: 'Open Sans', sans-serif;
     line-height: 2;
     text-decoration: none;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 @media screen and (max-width: 660px){
@@ -213,6 +230,30 @@ footer {
 
 
 /* MENUS */
+.button {
+    border: 2px solid #358963;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+	font-weight: 400;
+    text-align: center;
+    padding: 7px;
+}
+.button:hover {
+    background-color: #358963;
+    color: white;
+}
+
+.buttonrow {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media screen and (max-width: 400px){
+.buttonrow {
+    grid-template-columns: 1fr;
+}    
+}
+    
 .menucolumn1 {
     float: left;
     width: 45%;
@@ -237,30 +278,63 @@ footer {
         width: 100%;
     }
 }
- 
+
+.accordion {
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px;
+    transition: 0.2s;
+}
+.accordion:last-of-type {
+    border-bottom: 1px solid grey;
+}
+.active, .accordion:hover {
+    color:  #358963;
+}
+.accordion:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    padding-right: 30px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 
-        
+/* MISC. */
+
 img {
     margin-top: 0px;
-    object-fit: cover;
+    object-fit:cover;
     width: 100%;
-    height: 440px;
+    height: 57vh;
+    
 }    
-
 @media screen and (min-width: 650px){
     img {
-    height: auto;
-    max-height: 700px;
     }
 }
-    
-.map {
-    filter:contrast(.94);
-    height: 310px;
-    width: 100%;
-    margin-top: 20px;
-}
+
+
 
 /* ABOUT PAGE*/
 .row {
@@ -313,8 +387,12 @@ img {
         margin-top: 40px;
     }
 }
-
-
+.map {
+    filter:contrast(.94);
+    height: 340px;
+    width: 100%;
+    margin-top: 20px;
+}
 
 /* CONTACT PAGE */
 .contactrow {
