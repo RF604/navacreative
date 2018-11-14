@@ -94,17 +94,20 @@ function closeNav() {
 
 </div>       
     
+    
+ 
+    
+    
 
      
-        
-    
 <h1>Buffet Wedding Dinner – Example Menu</h1>       
-<br>
     
-<button class="accordion">Welcoming Bites</button>
-<div class="panel">
-  <div class="row">
-
+<div class="row">
+    
+  
+  <h2>Welcoming Bites</h2>
+  <br>
+ 
   <div class="menucolumn1">
       
 <h3>Tuna Tataki</h3>
@@ -125,12 +128,13 @@ function closeNav() {
 
   </div> 
 </div>   
-</div>
-
-<button class="accordion">Buffet Dinner</button>
-<div class="panel">
-   
+    
+<div class="line"></div>      
+    
 <div class="row">
+    
+  <h2>Buffet Dinner</h2>
+  <br>      
  
   <div class="menucolumn1">
       
@@ -157,13 +161,14 @@ function closeNav() {
   </div> 
       
 </div>  
-</div>
-
-<button class="accordion">Sweet Table</button>
-<div class="panel">
+    
+<div class="line"></div>      
     
 <div class="row">
-     
+    
+  <h2>Sweet Table</h2>
+  <br>      
+ 
 <div class="menucolumn1">
       
 <h3>Fresh Fruit</h3>
@@ -182,20 +187,21 @@ function closeNav() {
 
 </div> 
       
-</div>   
-</div>    
-
-    
-<br><br><br><br>   
+</div>      
+       
+<div class="doubleline"></div>      
     
     
-<h1>Plated Wedding Dinner – Example Menu</h1>  
     
-<br>
     
-<button class="accordion">Welcoming Bites</button>
-<div class="panel">
-   <div class="row">
+    
+<h1>Plated Wedding Dinner – Example Menu</h1>       
+    
+<div class="row">
+    
+  
+  <h2>Welcoming Bites</h2>
+  <br>
  
   <div class="menucolumn1">
       
@@ -217,16 +223,16 @@ function closeNav() {
 <p>On a cinnamon stick</p>
 
   </div> 
-</div>
+</div>   
     
-</div>
-
-<button class="accordion">Plated Dinner</button>
-<div class="panel">
+<div class="line"></div>      
     
 <div class="row">
-
-<div class="menucolumn1">
+    
+  <h2>Plated Dinner</h2>
+  <br>      
+ 
+  <div class="menucolumn1">
       
 <h3>Grilled Nectarine and Arugula Salad</h3>
 <p>With wheat berries and sugar snap peas</p>
@@ -245,12 +251,13 @@ function closeNav() {
   </div> 
       
 </div>  
- 
-</div>
-
-<button class="accordion">Sweet Table</button>
-<div class="panel">
-<div class="row">  
+    
+<div class="line"></div>      
+    
+<div class="row">
+    
+  <h2>Sweet Table</h2>
+  <br>      
  
 <div class="menucolumn1">
       
@@ -272,11 +279,10 @@ function closeNav() {
 
 </div> 
       
-</div>       
-</div>
+</div>      
     
-  
-<br><br><br><br>       
+<div class="doubleline"></div>      
+     
 
     
     
@@ -284,22 +290,11 @@ function closeNav() {
     
     
     
- <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+    
+    
+    
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>      
+<br>    
     
 <footer>
     
