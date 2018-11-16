@@ -38,9 +38,11 @@
 <meta name="robots" content="noindex">
     
 </head>
+ 
+    <!–– universal content start ––>       
     
 <body>
-
+    
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -49,10 +51,10 @@
     <br>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="menus.html">Menus</a>
     <a href="cafe.html">Café</a>
     <a href="personalcatering.html">Personal Catering</a>
     <a href="corporatecatering.html">Corporate Catering</a>
-    <a href="holidaycatering.html">Holiday Catering</a>
     <a href="contact.html">Contact</a>
     <br>
     <div class="navline"></div>
@@ -68,9 +70,9 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 </script>
-    
-<div class="canvas">
   
+<div class="canvas">
+    
 <div class="nav">
     
 <div class="left">
@@ -79,17 +81,17 @@ function closeNav() {
     
 </div>
 
-<div class="right">
+<div class="right">   
+    <a href="contact.html">Contact</a> 
     <a href="cafe.html">Café</a>
     <a href="menus.html">Menus</a>
-    <a href="contact.html">Contact</a> 
     <a href="about.html">About</a>
     <a href="personalcatering.html">Personal Catering</a>
     <a href="corporatecatering.html">Corporate Catering</a>    
 </div>  
     
-</div>    
-      
+</div>  
+    
 <div class="mobileheader">
 
   <div class="mobileleft">
@@ -99,14 +101,18 @@ function closeNav() {
   <div class="mobileright">
   <span class="menu" onclick="openNav()">Menu</span>
   </div>     
-   
-</div>    
+
+</div>   
+    
+<!–– universal content end ––> 
+    
+    
 
 <div class="tabrow">    
-<button class="tablink" onclick="openPage('1', this, 'darkseagreen')" id="defaultOpen"><h2>Cafe Menu</h2></button>
-<button class="tablink" onclick="openPage('2', this, 'darkseagreen')"><h2>Corporate Catering</h2></button>
-<button class="tablink" onclick="openPage('3', this, 'darkseagreen')"><h2>Personal Catering</h2></button>
-<button class="tablink" onclick="openPage('4', this, 'darkseagreen')"><h2>Kiddush Menu</h2></button>
+<button class="tablink" onclick="openPage('1', this, '#B0BEA9')" id="defaultOpen"><h2>Cafe Menu</h2></button>
+<button class="tablink" onclick="openPage('2', this, '#B0BEA9')"><h2>Corporate Catering</h2></button>
+<button class="tablink" onclick="openPage('3', this, '#B0BEA9')"><h2>Personal Catering</h2></button>
+<button class="tablink" onclick="openPage('4', this, '#B0BEA9')"><h2>Kiddush Menu</h2></button>
 </div>
 
 <div id="1" class="tabcontent">

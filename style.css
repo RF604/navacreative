@@ -270,14 +270,14 @@ footer {
 
 /* MENU PAGE */
 .tabrow {
-    background-color: #999;
+    background-color: #A0AD9A;
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto, 300px);
 }
 .tablink {
-    background-color: #999;
+    background-color: #A0AD9A;
     color: black;
     float: left;
     border: none;
@@ -286,14 +286,15 @@ footer {
     padding-top: 15px;
 }
 .tablink:hover {
-    background-color: darkseagreen;
+    background-color: #B0BEA9;
 }
 .tabcontent {
     display: none;
     padding: 60px 30px;
     margin: 0;
     height: auto;
-    background-color: darkseagreen;
+    background-color: #B0BEA9;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
 
