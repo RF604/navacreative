@@ -294,7 +294,7 @@ footer {
     margin: 0;
     height: auto;
     background-color: #B0BEA9;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png")!important;
 }
 
 
