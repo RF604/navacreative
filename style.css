@@ -287,14 +287,14 @@ footer {
 
 /* MENU PAGE */
 .tabrow {
-    background-color: #A0AD9A;
+    background-color: #aab2c2;
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto, 300px);
 }
 .tablink {
-    background-color: #A0AD9A;
+    background-color: #c2cbde;
     color: black;
     float: left;
     border: none;
@@ -303,14 +303,14 @@ footer {
     padding-top: 15px;
 }
 .tablink:hover {
-    background-color: #B0BEA9;
+    background-color: #aab2c2;
 }
 .tabcontent {
     display: none;
     padding: 60px 30px;
     margin: 0;
     height: auto;
-    background-color: #B0BEA9;
+    background-color: #c2cbde;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png")!important;
 }
 
@@ -413,23 +413,36 @@ img {
 }
 
 
-/* CONTACT PAGE */
+/* CONTACT ROW */
 .contactrow {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: -15px;
-    padding-bottom: 15px;
-    
+    padding-bottom: 0px;
 }
 .thirds {
     width: auto;
+    text-align: center;
+    display: none;
 }
+
+.half {
+    display: ;
+    text-align: center;
+    padding: 0 40px 10px 40px;
+    
+}
+
 @media screen and (max-width: 700px){
     .thirds {
         width: 100%;
     }
+    .halfs {
+        width: 100%;
+    }
     .contactrow {
         display: block;
+        margin-bottom: -20px;
     }
 }
 
