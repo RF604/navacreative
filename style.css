@@ -234,6 +234,10 @@ nav h1 {
 
 
 @media screen and (max-width: 600px){
+    .testimonial-container {
+        min-height: 165px;
+    }
+    
     .testimonials {
         padding: 0 0 20px 0;
         transition: .5s ease;
