@@ -38,7 +38,7 @@ body {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 760px) {
     .mobileheader {
         display: none;
     }
@@ -66,7 +66,8 @@ body {
 nav {
     display: none;
     padding-top: 0;
-    margin-top: -16px;
+    margin-top: 0;
+    background-color: #223167;
 }
 
 nav a,
@@ -75,27 +76,40 @@ nav h1 {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 760px) {
 
     nav {
         display: block;
-        width: 100%;
-        border-bottom: 3px solid #111114;
-        padding-bottom: 20px;
+        padding: 40px 20px;
         margin-bottom: 40px;
+        min-height: 150px;
     }
 
+    nav * {
+        color: #FCF9F7 !important;
+    }
+    
     .left {
-        display: inline-block;
-        width: auto;
         margin-top: -16px;
+        width: calc(100% - 125px);
+        float: left;
     }
 
     nav h1 {
-        font-size: 80px;
+        font-size: 42px;
+        white-space: nowrap;
         line-height: 1;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #FCF9F7;
     }
-
+ 
+    nav .buttons {
+        width: 100%;
+        padding-bottom: 8px;
+        margin-top: -2px;
+        border-bottom: 1px solid #FCF9F7;
+    }
+    
     nav .buttons a {
         padding-right: 16px;
         font-family: 'Open Sans', sans-serif;
@@ -104,12 +118,14 @@ nav h1 {
         font-weight: 400;
     }
 
-
     nav img {
         display: inline-block;
-        height: 92px;
+        height: 100px;
         width: auto;
         float: right;
+        margin-left: 80px;
+        margin-top: -96px;
+        filter: invert(1);
     }
 
 }
@@ -200,7 +216,6 @@ section h2.toggler {
     transition: 0.4s;
     border-top: 1px solid;
     padding: 16px 0 6px 0;
-    text-decoration: 
 }
 
 section h2.toggler:hover {
@@ -289,7 +304,7 @@ section div.panel p {
     }
     
     .prev, .next {
-        top: 100%;
+        top: 85%;
         transform: translateY(-25px);
     }
 
@@ -511,7 +526,7 @@ footer {
 
 /* MENU PAGE */
 .tabrow {
-    background-color: #c2cbde;
+    background-color: #223167;
     display: grid;
     grid-gap: 0px;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -520,8 +535,8 @@ footer {
 }
 
 .tablink {
-    background-color: #c2cbde;
-    color: black;
+    background-color: #223167;
+    color: white;
     float: left;
     border: none;
     outline: none;
@@ -530,7 +545,7 @@ footer {
 }
 
 .tablink:hover {
-    background-color: #aab2c2;
+    background-color: #82A3A1;
 }
 
 .tabcontent {
@@ -538,8 +553,8 @@ footer {
     padding: 60px 30px;
     margin: 0;
     height: auto;
-    background-color: #c2cbde;
-    background-image: url("/menu_texture.png") !important;
+    background-color: #82A3A1;
+    background-image: url("menu_texture.png");
 }
 
 
