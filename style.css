@@ -409,6 +409,10 @@ h2 {
     margin: 0 0 10px 0;
 }
 
+.row h2 {
+    font-weight: 700;
+}
+
 
 /* Menu Subheadings */
 
