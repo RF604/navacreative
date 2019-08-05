@@ -55,6 +55,10 @@ body {
     transition: ease .2s;
 }
 
+.mobileheader * {
+    font-size: 14px !important;
+}
+
 .mobileleft {
     float: left;
     white-space: nowrap;
@@ -98,7 +102,7 @@ nav h1 {
     nav {
         display: block;
         padding: 26px 0 0 0;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         min-height: 150px;
     }
 
@@ -167,6 +171,10 @@ nav h1 {
     padding: 40px 40px;
 }
 
+.overlay-content * {
+    font-size: 14px !important;
+}
+
 .overlay a {
     text-decoration: none;
     color: white;
@@ -184,9 +192,9 @@ nav h1 {
 .overlay .closebtn {
     position: absolute;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 43px;
     padding-top: 26px;
-    font-size: 30px;
+    font-size: 23px;
     z-index: 1;
     top: 0px;
     right: 0px;
@@ -210,8 +218,8 @@ nav h1 {
     .overlay .closebtn {
         top: 0px;
         right: 0px;
-        padding: 4px 18px 0px 40px;
-        font-size: 25px !important;
+        padding: 0px 18px 0px 40px;
+        font-size: 24px !important;
     }
 }
 
@@ -590,6 +598,7 @@ img {
 
 .banner_image {
     border: 0px solid #223167;
+    margin: 40px 0 20px 0;
 }
 
 
