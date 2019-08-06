@@ -683,14 +683,11 @@ img {
     margin-top: 20px;
 }
 
-.canvas.cafe_body {
+.cafe_body {
     display: flex;
     flex-direction: column;
-    height: 95vh;
-}
-
-.cafe_inner {
-    flex-grow: 1;
+    height: 94vh;
+    justify-content: space-between;
 }
 
 
@@ -703,24 +700,19 @@ img {
 }
 
 .thirds {
+    width: 33%;
+    text-align: center;
+}
+
+.thirds img {
+    margin-top: 6px;
+    height: 4.5em;
     width: auto;
-    text-align: center;
-    display: none;
 }
 
-.half {
-    display: ;
-    text-align: center;
-    padding: 0 40px 10px 40px;
 
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .thirds {
-        width: 100%;
-    }
-
-    .halfs {
         width: 100%;
     }
 
