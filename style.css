@@ -411,6 +411,7 @@ h2 {
 
 .row h2 {
     font-weight: 700;
+    font-size: 20px;
 }
 
 
@@ -559,6 +560,10 @@ footer {
     height: auto;
     background-color: #82A3A1;
     background-image: url("menu_texture.png");
+}
+
+.row.no_h1 {
+    padding-top: 0;
 }
 
 
